@@ -1,20 +1,43 @@
-pragma solidity ^0.5.10;
+pragma solidity ^0.5.8;
 
 contract Election {
 
+    uint gId;
+    uint objId;
+
     struct Ticket {
-        uint gid;
-        uint objid;
+        uint gId;
+        uint objId;
         string publicKey;
     }
 
-    struct Data {
-        string userData;
+    struct Transaction {
+        string obj;
+        string sender;
+        string reciever;
+        string failed;
+        int masterFlag;
+        int followerFlag;
     }
+    mapping(uint => Transaction) public transatctions;
 
-    mapping(uint => Ticket) public tickets;
+    mapping(address => Ticket) public tickets;
 
-    string public candidate;
-    constructor () public {
-    }
+    // //Function to check if objectIdExists.
+    //algo 1
+    //  function objIdExists(uint _objId) public returns(bool)   {
+    //      return require(_objId, false);
+    //  }
+
+    //  function grpIdExists(string memory _gId) public returns (bool) {
+    //      return require(_gId, false);
+    //  }
+
+
+
+
+    //algo2
+
+
+    //algo3
 }
