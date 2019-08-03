@@ -1,5 +1,5 @@
 {
-  "contractName": "Election",
+  "contractName": "Rules",
   "abi": [
     {
       "constant": true,
@@ -965,9 +965,16 @@
     "name": "solc",
     "version": "0.5.8+commit.23d335f2.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x5f252B32d19a42Ab97FaC0e369Bf5c81b13778e2",
+      "transactionHash": "0x775ad100fd2976b377e54047d079b6ba08cae5f27b1553f704bc4ed19e47e46a"
+    }
+  },
   "schemaVersion": "3.0.11",
-  "updatedAt": "2019-08-03T07:44:37.594Z",
+  "updatedAt": "2019-08-03T07:44:37.948Z",
   "devdoc": {
     "methods": {}
   },
